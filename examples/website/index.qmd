@@ -11,6 +11,6 @@ These are the sections:
 - [Computational](computational.qmd)
 - [Walk Through](walkthrough.qmd)
 - [Dashboard](https://angelofgdsantos.quarto.pub/development-indicators/)
-jfj
+
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
