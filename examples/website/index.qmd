@@ -12,4 +12,5 @@ These are the sections:
 - [Walk Through](walkthrough.qmd)
 - [Dashboard](https://angelofgdsantos.quarto.pub/development-indicators/)
 
+
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
