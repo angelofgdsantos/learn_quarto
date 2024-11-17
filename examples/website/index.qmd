@@ -1,0 +1,14 @@
+---
+title: "Welcome 🙋🏽‍♂️"
+---
+
+I create this website to learn quarto, maybe I can help you too! 
+
+These are the sections:
+
+- [About](about.qmd)
+- [Authoring](authoring.qmd)
+- [Computational](computational.qmd)
+- [Walk Through](walkthrough.qmd)
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
