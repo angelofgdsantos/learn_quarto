@@ -1,0 +1,21 @@
+---
+title: "Quarto Document"
+author: "Norah Jones"
+toc: true # table of content
+number-sections: true # Section number style
+highlight-style: pygments
+bibliography: ../references/definitive.bib # bibliography reference
+jupyter: python3 
+reference-location: margin # footnotes margin
+format: 
+    html:
+        code-fold: true
+        html-math-method: katex
+    pdf:
+        geometry: 
+        - top=30mm
+        - left=20mm
+    docx: default
+---
+
+About this site
