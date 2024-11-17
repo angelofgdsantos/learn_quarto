@@ -18,6 +18,9 @@ website:
       - href: walkthrough.qmd
         text: Walk through
 
+resources: 
+  - dashboard_example.qmd
+  
 format:
   html:
     theme: cosmo
