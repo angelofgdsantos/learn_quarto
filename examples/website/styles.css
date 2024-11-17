@@ -13,7 +13,7 @@
   color:  #04e104;
 }
 .navbar-nav .nav-link.active {
-  color: #137213;
+  color: #228B22;
 }
 .navbar .quarto-navbar-tools .quarto-navigation-tool {
   color: rgb(208, 234, 209);
@@ -30,7 +30,7 @@
   color: #04e104 !important;
 }
 .sidebar nav[role=doc-toc] ul>li>a.active {
-  color: #137213 !important;
+  color: #228B22 !important;
 }
 
 /* Tabs */
@@ -56,7 +56,7 @@ body {
 }
 /* Underline links */
 a {
-  color: #137213;
+  color: #228B22;
   text-decoration: underline dotted rgb(208, 234, 209);
 }
 h1 {
