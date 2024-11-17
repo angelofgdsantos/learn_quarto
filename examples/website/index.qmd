@@ -10,6 +10,6 @@ These are the sections:
 - [Authoring](authoring.qmd)
 - [Computational](computational.qmd)
 - [Walk Through](walkthrough.qmd)
-- [Dashboard](https://angelofgdsantos.quarto.pub/development-indicators-by-continent/)
+- [Dashboard](https://angelofgdsantos.quarto.pub/development-indicators/)
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
