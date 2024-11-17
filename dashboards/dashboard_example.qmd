@@ -1,7 +1,10 @@
 --- 
 title: "Development Indicators by Continent"
 author: "Gapminder Analytics Group"
-format: dashboard
+format: 
+  dashboard:
+    embed-resources: true
+
 --- 
 
 ```{python}

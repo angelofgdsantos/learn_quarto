@@ -1,0 +1,4 @@
+- source: dashboard_example.qmd
+  quarto-pub:
+    - id: d702b96f-9986-4ab1-b394-c0ed84ca5ef0
+      url: https://angelofgdsantos.quarto.pub/development-indicators-by-continent
