@@ -10,7 +10,8 @@ These are the sections:
 - [Authoring](authoring.qmd)
 - [Computational](computational.qmd)
 - [Walk Through](walkthrough.qmd)
-- [Dashboard](https://angelofgdsantos.quarto.pub/development-indicators/)
+- [Dashboard static](https://angelofgdsantos.quarto.pub/development-indicators/)
+- [Dashboard dynamic](https://angelofgdsantos.shinyapps.io/lac_children_dashboard/)
 
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
