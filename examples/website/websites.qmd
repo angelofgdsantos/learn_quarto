@@ -11,11 +11,11 @@ format:
     html:
         code-fold: true
         html-math-method: katex
-    pdf:
-        geometry: 
-        - top=30mm
-        - left=20mm
-    docx: default
+    # pdf:
+    #     geometry: 
+    #     - top=30mm
+    #     - left=20mm
+    # docx: default
 ---
 
 Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬
@@ -34,7 +34,7 @@ First things first, we need to learn how to setup the basic structure of our web
 
 To start, create a website Quarto Project to generate the base files. I am using VS Code and this is what I need to do: 
 
-![](../../gifs/create_website_vs.gif)
+![](/gifs/create_website_vs.png)
 
 After creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, if you want to edit the website title you can find some like the following
 

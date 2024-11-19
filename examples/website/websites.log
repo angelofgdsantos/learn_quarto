@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.16)  19 NOV 2024 12:41
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.16)  19 NOV 2024 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1141,23 +1141,16 @@ No file websites.toc.
 Missing character: There is no 😬 (U+1F62C) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 🤙 (U+1F919) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 🏽 (U+1F3FD) in font [lmroman10-regular]:mapping=tex-text;!
-
-LaTeX Warning: File `../../gifs/create_website_vs.gif' not found on input line 217.
-
-
-! LaTeX Error: File `../../gifs/create_website_vs.gif' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 ...ratio]{../../gifs/create_website_vs.gif}}
+! Unable to load picture or PDF file './gifs/create_website_vs.png'.
+<to be read again> 
+                   }
+l.217 ...pectratio]{./gifs/create_website_vs.png}}
                                                    
 Here is how much of TeX's memory you used:
- 37299 strings out of 475994
- 770388 string characters out of 5777552
+ 37257 strings out of 475994
+ 768481 string characters out of 5777552
  1439951 words of memory out of 5000000
- 59585 multiletter control sequences out of 15000+600000
+ 59544 multiletter control sequences out of 15000+600000
  561657 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  108i,6n,123p,10903b,945s stack positions out of 10000i,1000n,20000p,200000b,200000s
