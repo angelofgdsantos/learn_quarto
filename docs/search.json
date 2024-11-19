@@ -21,6 +21,13 @@
     "text": "About this site"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome 🙋🏽‍♂️",
+    "section": "",
+    "text": "I create this website to learn quarto, maybe I can help you too!\nQuarto is an amazing publishing tool to create websites, presentations, documents and other cool stuff.\nThese are the sections I have for now:\n\nAbout\nWebsites\nExamples of pages and dashboard can be found on the tab Examples\n\nTo learn more about Quarto visit https://quarto.org."
+  },
+  {
     "objectID": "authoring.html",
     "href": "authoring.html",
     "title": "Authoring",
@@ -63,11 +70,18 @@
     "text": "7.1 Placing Colorbars\nColorbars indicate the quantitative extent of image data. Placing in a figure is non-trivial because room needs to be made for them. The simplest case is just attaching a colorbar to each axes:1.\n1 See the Matplotlib Gallery to explore colorbars further\n\nCode\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nfig, axs = plt.subplots(2, 2)\nfig.set_size_inches(20, 8)\ncmaps = ['RdBu_r', 'viridis']\nfor col in range(2):\n    for row in range(2):\n        ax = axs[row, col]\n        pcm = ax.pcolormesh(\n          np.random.random((20, 20)) * (col + 1),\n          cmap=cmaps[col]\n        )\n        fig.colorbar(pcm, ax=ax)\nplt.show()"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome 🙋🏽‍♂️",
+    "objectID": "dashboard.html",
+    "href": "dashboard.html",
+    "title": "Dashboards",
     "section": "",
-    "text": "I create this website to learn quarto, maybe I can help you too!\nQuarto is an amazing publishing tool to create websites, presentations, documents and other cool stuff.\nThese are the sections I have for now:\n\nAbout\nWebsites\nExamples of pages and dashboard can be found on the tab Examples\n\nTo learn more about Quarto visit https://quarto.org."
+    "text": "These are examples of dashboard I created with Qaurto:\n\nStatic Dashboards\n\nQuarto dashboard learning example\n\n\n\nDynamic Dashboards\n\nLAC children exposure to air pollution and extreme heat"
+  },
+  {
+    "objectID": "websites.html",
+    "href": "websites.html",
+    "title": "Websites",
+    "section": "",
+    "text": "Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬\nThis Page will have multiple sections on how to customize your website, from the basic to the fancy stuff. I hope to include enough content to create a nice website for yourself 🤙🏽 let’s do it!\n\n\n\n\n\n\nWarning\n\n\n\nRemember that Quarto has a great website with A LOT of information on websites.\n\n\n\nWebsite setup\nFirst things first, we need to learn how to setup the basic structure of our website. This include first order things like themes, titles, format, navigation bar and others.\nTo start, create a website Quarto Project to generate the base files. I am using VS Code and this is what I need to do:\n\nAfter creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, if you want to edit the website title you can find some like the following\n---\nproject:\n  type: website\n  output-dir: ../../docs\n\nwebsite:\n  title: \"Learning Quarto\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: websites.qmd\n        text: Websites\n      - href: dashboard.qmd\n        text: Dashboards\n      - text: Examples\n        menu: \n        - href: authoring.qmd\n          text: Example 1\n        - href: computational.qmd\n          text: Example 2\n        - href: walkthrough.qmd\n          text: Example 3\n---\n\nLearning Quarto Learning Quarto Home /index.html Websites /websites.html Dashboards /dashboard.html Examples Example 1 /authoring.html Example 2 /computational.html Example 3 /walkthrough.html\n\n\nWebsites – Learning Quarto Websites – Learning Quarto Websites – Learning Quarto Learning Quarto"
   },
   {
     "objectID": "computational.html",
@@ -103,19 +117,5 @@
     "title": "Quarto Computations",
     "section": "Two figures together",
     "text": "Two figures together\n\nCode\nimport plotly.express as px\nimport plotly.io as pio\ngapminder = px.data.gapminder()\ndef gapminder_plot(year):\n    gapminderYear = gapminder.query(\"year == \" + \n                                    str(year))\n    fig = px.scatter(gapminderYear, \n                     x=\"gdpPercap\", y=\"lifeExp\",\n                     size=\"pop\", size_max=60,\n                     hover_name=\"country\")\n    fig.show()\n    \ngapminder_plot(1957)\ngapminder_plot(2007)\n\n\n\n\n\n\n\n\n\n                                                \n\n\n(a) Gapminder: 1957\n\n\n\n\n\n\n\n\n                                                \n\n\n(b) Gapminder: 2007\n\n\n\n\n\n\n\nFigure 2: Life Expectancy and GDP"
-  },
-  {
-    "objectID": "websites.html",
-    "href": "websites.html",
-    "title": "Websites",
-    "section": "",
-    "text": "Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬\nThis Page will have multiple sections on how to customize your website, from the basic to the fancy stuff. I hope to include enough content to create a nice website for yourself 🤙🏽 let’s do it!\n\n\n\n\n\n\nWarning\n\n\n\nRemember that Quarto has a great website with A LOT of information on websites.\n\n\n\nWebsite setup\nFirst things first, we need to learn how to setup the basic structure of our website. This include first order things like themes, titles, format, navigation bar and others.\nTo start, create a website Quarto Project to generate the base files. I am using VS Code and this is what I need to do:\n\nAfter creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, if you want to edit the website title you can find some like the following\n---\nproject:\n  type: website\n  output-dir: ../../docs\n\nwebsite:\n  title: \"Learning Quarto\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: websites.qmd\n        text: Websites\n      - href: dashboard.qmd\n        text: Dashboards\n      - text: Examples\n        menu: \n        - href: authoring.qmd\n          text: Example 1\n        - href: computational.qmd\n          text: Example 2\n        - href: walkthrough.qmd\n          text: Example 3\n---"
-  },
-  {
-    "objectID": "dashboard.html",
-    "href": "dashboard.html",
-    "title": "Dashboards",
-    "section": "",
-    "text": "These are examples of dashboard I created with Qaurto:\n\nStatic Dashboards\n\nQuarto dashboard learning example\n\n\n\nDynamic Dashboards\n\nLAC children exposure to air pollution and extreme heat"
   }
 ]
