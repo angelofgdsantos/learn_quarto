@@ -4,14 +4,13 @@ title: "Welcome 🙋🏽‍♂️"
 
 I create this website to learn quarto, maybe I can help you too! 
 
-These are the sections:
+Quarto is an amazing publishing tool to create websites, presentations, documents and other cool stuff. 
+
+These are the sections I have for now:
 
 - [About](about.qmd)
-- [Authoring](authoring.qmd)
-- [Computational](computational.qmd)
-- [Walk Through](walkthrough.qmd)
-- [Dashboard static](https://angelofgdsantos.quarto.pub/development-indicators/)
-- [Dashboard dynamic](https://angelofgdsantos.shinyapps.io/lac_children_dashboard/)
+- [Websites](websites.qmd)
+- Examples of pages and dashboard can be found on the tab **Examples**
 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+To learn more about Quarto visit <https://quarto.org>.

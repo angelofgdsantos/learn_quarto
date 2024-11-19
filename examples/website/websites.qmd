@@ -1,0 +1,67 @@
+---
+title: "Websites"
+author: "Angelo Santos"
+toc: true # table of content
+number-sections: false # Section number style
+highlight-style: pygments
+# bibliography: ../references/definitive.bib # bibliography reference
+jupyter: python3 
+reference-location: margin # footnotes margin
+format: 
+    html:
+        code-fold: true
+        html-math-method: katex
+    pdf:
+        geometry: 
+        - top=30mm
+        - left=20mm
+    docx: default
+---
+
+Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬
+
+This Page will have multiple sections on how to customize your website, from the basic to the fancy stuff. I hope to include enough content to create a nice website for yourself 🤙🏽 let's do it!
+
+::: {.callout-warning icon="👀"}
+
+Remember that Quarto has a great [website](https://quarto.org/docs/websites/) with **A LOT** of information on websites.
+
+:::
+
+# Website setup
+
+First things first, we need to learn how to setup the basic structure of our website. This include first order things like [themes](https://quarto.org/docs/output-formats/html-themes.html), titles, format, navigation bar and others.
+
+To start, create a website Quarto Project to generate the base files. I am using VS Code and this is what I need to do: 
+
+![](/gifs/create_website_vs.gif)
+
+After creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, if you want to edit the website title you can find some like the following
+
+```
+---
+project:
+  type: website
+  output-dir: ../../docs
+
+website:
+  title: "Learning Quarto"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: websites.qmd
+        text: Websites
+      - href: dashboard.qmd
+        text: Dashboards
+      - text: Examples
+        menu: 
+        - href: authoring.qmd
+          text: Example 1
+        - href: computational.qmd
+          text: Example 2
+        - href: walkthrough.qmd
+          text: Example 3
+---
+```
+

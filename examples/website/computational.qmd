@@ -8,7 +8,7 @@ format:
         code-tools: true # Tab with code options
 jupyter: python3
 ---
-
+    
 ## NumPy
 
 ```{python}

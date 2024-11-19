@@ -9,19 +9,22 @@ website:
     left:
       - href: index.qmd
         text: Home
-      # - href: about.qmd
-        # text: About
-      - href: authoring.qmd
-        text: Authoring
-      - href: computational.qmd
-        text: Computational
-      - href: walkthrough.qmd
-        text: Walk through
+      - href: websites.qmd
+        text: Websites
+      - href: dashboard.qmd
+        text: Dashboards
+      - text: Examples
+        menu: 
+        - href: authoring.qmd
+          text: Example 1
+        - href: computational.qmd
+          text: Example 2
+        - href: walkthrough.qmd
+          text: Example 3
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: sketchy
     toc: true
 
 
