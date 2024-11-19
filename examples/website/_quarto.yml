@@ -6,7 +6,6 @@ project:
 website:
   title: "Learning Quarto"
   navbar:
-    logo: 
     left:
       - href: index.qmd
         text: Home
@@ -27,8 +26,11 @@ website:
 
 format:
   html:
-    theme: sketchy
+    theme:
+      light: cosmo
+      dark: lux
     toc: true
+    style: style.css
 
 
 
