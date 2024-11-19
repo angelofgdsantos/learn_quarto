@@ -6,6 +6,7 @@ project:
 website:
   title: "Learning Quarto"
   navbar:
+    logo: 
     left:
       - href: index.qmd
         text: Home
@@ -21,6 +22,8 @@ website:
           text: Example 2
         - href: walkthrough.qmd
           text: Example 3
+        - href: http://angelofgdsantos.github.io/
+          text: Personal website
 
 format:
   html:

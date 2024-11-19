@@ -2,7 +2,12 @@
 title: "Welcome 🙋🏽‍♂️"
 ---
 
-I create this website to learn quarto, maybe I can help you too! 
+I created this website to document my learning process using Quarto. I hope it can help you too! 
+
+
+::: {.callout-caution}
+Please note that the website is still **under construction**, so you might encounter some issues. If you do, feel free to let me know by sending me an [email](mailto:angelofgdsantos@gmail.com)
+:::
 
 Quarto is an amazing publishing tool to create websites, presentations, documents and other cool stuff. 
 
@@ -10,7 +15,7 @@ These are the sections I have for now:
 
 - [About](about.qmd)
 - [Websites](websites.qmd)
-- Examples of pages and dashboard can be found on the tab **Examples**
+- <u>Examples</u> shows some pages, or websites I created using Quarto
 
 
 To learn more about Quarto visit <https://quarto.org>.

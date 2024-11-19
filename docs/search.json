@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Welcome 🙋🏽‍♂️",
     "section": "",
-    "text": "I create this website to learn quarto, maybe I can help you too!\nQuarto is an amazing publishing tool to create websites, presentations, documents and other cool stuff.\nThese are the sections I have for now:\n\nAbout\nWebsites\nExamples of pages and dashboard can be found on the tab Examples\n\nTo learn more about Quarto visit https://quarto.org."
+    "text": "I created this website to document my learning process using Quarto. I hope it can help you too!\n\n\n\n\n\n\nCaution\n\n\n\nPlease note that the website is still under construction, so you might encounter some issues. If you do, feel free to let me know by sending me an email\n\n\nQuarto is an amazing publishing tool to create websites, presentations, documents and other cool stuff.\nThese are the sections I have for now:\n\nAbout\nWebsites\nExamples shows some pages, or websites I created using Quarto\n\nTo learn more about Quarto visit https://quarto.org."
   },
   {
     "objectID": "authoring.html",
@@ -81,7 +81,14 @@
     "href": "websites.html",
     "title": "Websites",
     "section": "",
-    "text": "Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬\nThis Page will have multiple sections on how to customize your website, from the basic to the fancy stuff. I hope to include enough content to create a nice website for yourself 🤙🏽 let’s do it!\n\n\n\n\n\n\nWarning\n\n\n\nRemember that Quarto has a great website with A LOT of information on websites.\n\n\n\nWebsite setup\nFirst things first, we need to learn how to setup the basic structure of our website. This include first order things like themes, titles, format, navigation bar and others.\nTo start, create a website Quarto Project to generate the base files. I am using VS Code and this is what I need to do:\n\nAfter creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, if you want to edit the website title you can find some like the following\n---\nproject:\n  type: website\n  output-dir: ../../docs\n\nwebsite:\n  title: \"Learning Quarto\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - href: websites.qmd\n        text: Websites\n      - href: dashboard.qmd\n        text: Dashboards\n      - text: Examples\n        menu: \n        - href: authoring.qmd\n          text: Example 1\n        - href: computational.qmd\n          text: Example 2\n        - href: walkthrough.qmd\n          text: Example 3\n---"
+    "text": "Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬\nThis Page will have multiple sections on how to customize your website, from the basic to the fancy stuff. I hope to include enough content to create a nice website for yourself 🤙🏽 let’s do it!"
+  },
+  {
+    "objectID": "websites.html#customization",
+    "href": "websites.html#customization",
+    "title": "Websites",
+    "section": "1.1 Customization",
+    "text": "1.1 Customization\nA nice thing about a personal website is to own it and make it reflect your style! Take care, this can bring you to a noendless rabbit hole, and sometime it is hard to get out 🫠\nI will go over some customizations that I learned while creating my content.\n\n1.1.1 Themes\n\n\n1.1.2 Style\n\nFonts\nColors\n\n\n\n1.1.3 Logo and Favicons\nI really like logos and favicons. For some reason I believe they can tell something about you, your story or just make the website visually satisfying.\nIn my case, I choosed a tree for my personal website favicon and logo, why 🤔 I love nature and hiking, trees are gorgeous and so diverse! They are impressive separatelly and together as a biosystem. Also, I am an enviromental economist working with deforestation, nothing more clear than a tree for my logo.\nBut what really matters is…\n\nwebsite:\ntitle: \"Angelo Santos\"\n1favicon: /images/favicon.ico\nnavbar:\n2  logo: /images/favicon-32x32.png\n  left:\n\n1\n\nDefine your favicon\n\n2\n\nDefine a logo that show up with the website title\n\n\nI encourage you to look for favicon online, maybe AI can also help with creating an original and nice favicon. Tell us someone about you or you document through this!"
   },
   {
     "objectID": "computational.html",

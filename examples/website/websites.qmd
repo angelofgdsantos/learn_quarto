@@ -2,7 +2,7 @@
 title: "Websites"
 author: "Angelo Santos"
 toc: true # table of content
-number-sections: false # Section number style
+number-sections: true # Section number style
 highlight-style: pygments
 # bibliography: ../references/definitive.bib # bibliography reference
 jupyter: python3 
@@ -11,11 +11,16 @@ format:
     html:
         code-fold: true
         html-math-method: katex
+        code-annotations: hover
+        code-copy: false
+
+
     # pdf:
     #     geometry: 
     #     - top=30mm
     #     - left=20mm
     # docx: default
+
 ---
 
 Websites are powerful tools to show your work to the world! Not only that, can be a great way to document and organize your projects in a visual way - exaclty what I am trying to do right now 😬
@@ -36,20 +41,20 @@ To start, create a website Quarto Project to generate the base files. I am using
 
 ![](/gifs/create_website_vs.png)
 
-After creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, if you want to edit the website title you can find some like the following
+After creating a project folder, you can fin a file called _quarto.yaml. This is the key file to setup your website settings. For example, this is the _quarto.yaml for this website:
 
-```
+``` yaml
 ---
 project:
-  type: website
-  output-dir: ../../docs
+  type: website                   # <1>
+  output-dir: ../../docs          # <2>
 
 website:
-  title: "Learning Quarto"
+  title: "Learning Quarto"        # <3>
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - href: index.qmd           # <4>
+        text: Home                
       - href: websites.qmd
         text: Websites
       - href: dashboard.qmd
@@ -61,7 +66,52 @@ website:
         - href: computational.qmd
           text: Example 2
         - href: walkthrough.qmd
-          text: Example 3
+          text: Example 3         # <4>
+
+
+format:     
+  html:
+    theme: sketchy            # <5>
+    toc: true                 # <6>
 ---
 ```
+1. Type of project you are working on
+2. Output folde
+3. Website title
+4. Structure and labels of navigation bar 
+5. Website Theme
 
+## Customization
+
+A nice thing about a personal website is to own it and make it reflect your style! Take care, this can bring you to a noendless rabbit hole, and sometime it is hard to get out 🫠
+
+I will go over some customizations that I learned while creating my content. 
+
+### Themes
+### Style
+
+  1. Fonts
+  2. Colors
+
+### Logo and Favicons
+
+  I really like logos and favicons. For some reason I believe they can tell something about you, your story or just make the website visually satisfying. 
+  
+  In my case, I choosed a tree for my personal website favicon and logo, why 🤔  I love nature and hiking, trees are gorgeous and so diverse! They are impressive separatelly and together as a biosystem. Also, I am an enviromental economist working with deforestation, nothing more clear than a tree for my logo.
+
+  But what really matters is...
+
+  ``` yaml
+
+website:
+  title: "Angelo Santos"
+  favicon: /images/favicon.ico      # <1>
+  navbar:
+    logo: /images/favicon-32x32.png  # <2>
+    left:
+  
+  ```
+  1. Define your favicon
+  2. Define a logo that show up with the website title
+
+I encourage you to look for favicon online, maybe AI can also help with creating an original and nice favicon. Tell us someone about you or you document through this! 
